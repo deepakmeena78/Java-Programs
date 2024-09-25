@@ -1,0 +1,21 @@
+Questions-1
+1.	What is the difference between FileReader and BufferedReader?
+2.	How do you create a new file in Java? 
+3.	How do you handle exceptions when performing file I/O operations in Java? Provide an example.
+4.	What is the difference between FileInputStream and FileOutputStream? When would you use each?
+5.	Write a Java program to read a text file line by line and print each line to the console.
+6.	How do you append data to an existing file in Java?
+7.	Write a Java program to copy the contents of one file to another.
+8.	Describe how you would handle large files that do not fit into memory when reading them in Java.
+9.	How do you recursively list all files in a directory and its subdirectories? Provide a code example.
+10.	Write a Java program to merge the contents of multiple text files into a single text file.
+11.	Write a Java program to search for a specific word in a text file and count its occurrences
+12.	Write a Java program to create a user registration system that stores user details (username, hashed password, email) in a CSV file. Implement methods for registration and login.
+13.	Create a Java program to simulate a user login system. The program should prompt the user for a username and password, verify the credentials against stored data, and display a success or failure message.
+14.	Write a Java program that implements a basic bank account balance checking system. The program should:
+
+15.	Read user credentials from a CSV file (users.csv) containing username and hashed password pairs.
+Prompt the user to enter their username and password.
+Validate the entered credentials against the data stored in the CSV file.
+If the credentials are valid, allow the user to check their bank account balance.
+Display an appropriate message if the credentials are invalid or if the user is not found in the CSV file.

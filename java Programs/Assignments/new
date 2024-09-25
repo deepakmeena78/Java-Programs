@@ -1,0 +1,71 @@
+Exception Assignment-1
+1.	Create a simple banking application in Java that allows users to withdraw money from their account. The program should handle the following exceptions:
+
+a.	InputMismatchException: Thrown when the user enters a non-numeric value for the withdrawal amount.
+b.	InsufficientFundsException: A custom exception that should be thrown when the user attempts to withdraw more money than they have in their account.
+
+The program should use a try-catch-finally block to handle these exceptions. Additionally, use a throw statement to throw the InsufficientFundsException and handle it in another catch block.
+
+Requirements:
+●	Create a class InsufficientFundsException that extends Exception.
+●	Create a class BankAccount with the following:
+-A private field balance to store the account balance.
+-A constructor to initialize the balance.
+-A method withdraw(double amount) that:
+-Throws an InsufficientFundsException if the amount is greater than the balance.
+-Deducts the amount from the balance if there are sufficient funds.
+
+2.	Write a Java program for an online shopping cart that allows users to add items and calculate the total cost. The program should handle the following exceptions:
+a.	InputMismatchException: Thrown when the user enters a non-numeric value for the item price.
+b.	IllegalArgumentException: Thrown when the user enters a negative value for the item price.
+
+The program should use a try-catch-finally block to handle these exceptions. Additionally, use a throw statement to throw the IllegalArgumentException and handle it in another catch block.
+
+Requirements:
+●	Create a class ShoppingCart with the following:
+●	A private field totalCost to store the total cost of items.
+●	A method addItem(double price) that:
+●	Throws an IllegalArgumentException if the price is negative.
+●	Adds the price to the totalCost if it is valid.
+
+Hint- Prompt the user to enter the price of an item.
+●	Use a try block to read the price and call the addItem method.
+●	Use catch blocks to handle InputMismatchException and IllegalArgumentException.
+●	Use a finally block to print the total cost.
+
+3.	Write a Java program for a library management system that allows users to borrow books. The program should handle the following exceptions:
+
+a.	InputMismatchException: Thrown when the user enters a non-integer value for the number of books to borrow.
+b.	LimitExceededException: A custom exception that should be thrown when the user attempts to borrow more books than allowed.
+
+The program should use a try-catch-finally block to handle these exceptions. Additionally, use a throw statement to throw the LimitExceededException and handle it in another catch block.
+
+Requirements:
+●	Create a class LimitExceededException that extends Exception.
+●	Create a class Library with the following:
+●	A private field maxBooks to store the maximum number of books a user can borrow.
+●	A private field borrowedBooks to store the number of books currently borrowed.
+●	A method borrowBooks(int numberOfBooks) that:
+●	Throws a LimitExceededException if numberOfBooks exceeds maxBooks - borrowedBooks.
+●	Adds numberOfBooks to borrowedBooks if the limit is not exceeded.
+4.Write a Java program for a flight booking system that allows users to book seats on a flight. The program should handle the following exceptions:
+
+a.	InputMismatchException: Thrown when the user enters a non-integer value for the number of seats to book.
+b.	SeatsUnavailableException: A custom exception that should be thrown when the user attempts to book more seats than available.
+
+The program should use a try-catch-finally block to handle these exceptions. Additionally, use a throw statement to throw the SeatsUnavailableException and handle it in another catch block.
+
+Requirements:
+●	Create a class SeatsUnavailableException that extends Exception.
+●	Create a class Flight with the following:
+●	A private field totalSeats to store the total number of seats on the flight.
+●	A private field bookedSeats to store the number of seats currently booked.
+●	A method bookSeats(int numberOfSeats) that:
+●	Throws a SeatsUnavailableException if numberOfSeats exceeds totalSeats - bookedSeats.
+●	Adds numberOfSeats to bookedSeats if there are enough seats available.
+
+In the main method:
+●	Prompt the user to enter the number of seats to book.
+●	Use a try block to read the number of seats and call the bookSeats method.
+●	Use catch blocks to handle InputMismatchException and SeatsUnavailableException.
+●	Use a finally block to print the number of seats currently booked.
