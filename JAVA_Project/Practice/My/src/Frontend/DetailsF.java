@@ -22,7 +22,7 @@ public class DetailsF {
 
         Details dl = new Details(name, city, add, pincode);
 
-        System.out.println("Name : " + dl.getName() + "\nCity : " + dl.getCity() + "\nAddress : " + dl.getAddress() + "\nPincode : " + dl.getPincode());
+        System.out.println("Name : " + dl.getName() + "\nCity : " + dl.getCity() + "\nAddress : " + dl.getMobile()+ "\nPincode : " + dl.getPincode());
 
     }
 }

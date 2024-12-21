@@ -7,6 +7,13 @@ public class Details {
     private String mobile;
     private int pincode;
 
+    public Details(String name, String city, String address, int pincode) {
+        this.name = name;
+        this.city = city;
+        this.mobile  = address;
+        this.pincode = pincode;
+    }
+
     public String getName() {
         return name;
     }
@@ -15,40 +22,11 @@ public class Details {
         return city;
     }
 
-    @Override
-    public String toString() {
-        return "Details{" + "name=" + name + ", city=" + city + ", address=" + mobile + ", pincode=" + pincode + '}';
-    }
-
-    public Details(String name, String city, String address, int pincode) {
-        this.name = name;
-        this.city = city;
-        this.mobile = address;
-        this.pincode = pincode;
-    }
-
-    public String getAddress() {
+    public String getMobile() {
         return mobile;
     }
 
     public int getPincode() {
         return pincode;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setAddress(String address) {
-        this.mobile = address;
-    }
-
-    public void setPincode(int pincode) {
-        this.pincode = pincode;
-    }
-
 }
