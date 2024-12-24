@@ -9,27 +9,22 @@ public class Palindrom {
 
         System.out.println("Enter Number");
         int num = sc.nextInt();
-        
-        int temp2 = 0;
-        int temp3 = num;
-        for (int i = 1;i <= num;){
-            temp2++;
-            if(num == 0){
-                break;
-            }
+
+        int num2 = num;
+        int compaire = num;
+        int count = 0;
+
+        while (num != 0) {
+            count++;
             num = num / 10;
         }
-        
-        System.out.println(temp2);
-        
-        
-        ,
-        int temp = 0;
-        for (int i = 1; i <= temp2; i++) {
-            temp = (num % 10)+(temp * 10);
-            num = num / 10;
+
+        int Pnumber = 0;
+        for (int i = 1; i <= count; i++) {
+            Pnumber = (num2 % 10) + (Pnumber * 10);
+            num2 = num2 / 10;
         }
-        if (temp == num) {
+        if (Pnumber == compaire) {
             System.out.println("Palindrome Number");
         } else {
             System.out.println("Not Nalindrome Number");

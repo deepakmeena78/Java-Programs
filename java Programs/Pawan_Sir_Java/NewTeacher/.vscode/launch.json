@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CommondLine",
+            "request": "launch",
+            "mainClass": "CommondLine",
+            "projectName": "NewTeacher_b26338ea"
+        },
+        {
+            "type": "java",
+            "name": "InnerAdd",
+            "request": "launch",
+            "mainClass": "InnerAdd",
+            "projectName": "NewTeacher_b26338ea"
+        },
+        {
+            "type": "java",
+            "name": "SuperUse",
+            "request": "launch",
+            "mainClass": "SuperUse",
+            "projectName": "NewTeacher_b26338ea"
+        }
+    ]
+}
