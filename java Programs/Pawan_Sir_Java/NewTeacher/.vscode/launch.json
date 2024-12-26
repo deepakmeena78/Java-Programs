@@ -1,35 +1,84 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "CommondLine",
-            "request": "launch",
-            "mainClass": "CommondLine",
-            "projectName": "NewTeacher_b26338ea"
-        },
-        {
-            "type": "java",
-            "name": "InnerAdd",
-            "request": "launch",
-            "mainClass": "InnerAdd",
-            "projectName": "NewTeacher_b26338ea"
-        },
-        {
-            "type": "java",
-            "name": "SuperUse",
-            "request": "launch",
-            "mainClass": "SuperUse",
-            "projectName": "NewTeacher_b26338ea"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ASUserDelails",
+      "request": "launch",
+      "mainClass": "ASUserDelails",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASVEHICIE",
+      "request": "launch",
+      "mainClass": "ASVEHICIE",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASBankSAccounts",
+      "request": "launch",
+      "mainClass": "ASBankSAccounts",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "Sounds",
+      "request": "launch",
+      "mainClass": "Sounds",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "AreaCount",
+      "request": "launch",
+      "mainClass": "AreaCount",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "OverRiding",
+      "request": "launch",
+      "mainClass": "OverRiding",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "Exceptions",
+      "request": "launch",
+      "mainClass": "Exceptions",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "CommondLine",
+      "request": "launch",
+      "mainClass": "CommondLine",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "InnerAdd",
+      "request": "launch",
+      "mainClass": "InnerAdd",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "SuperUse",
+      "request": "launch",
+      "mainClass": "SuperUse",
+      "projectName": "NewTeacher_b26338ea"
+    }
+  ]
 }
