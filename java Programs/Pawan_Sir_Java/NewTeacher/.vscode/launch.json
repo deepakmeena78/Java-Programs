@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ASPayment",
+      "request": "launch",
+      "mainClass": "ASPayment",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASAppliance",
+      "request": "launch",
+      "mainClass": "ASAppliance",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASPizza",
+      "request": "launch",
+      "mainClass": "ASPizza",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASTeams",
+      "request": "launch",
+      "mainClass": "ASTeams",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
       "name": "ASUserDelails",
       "request": "launch",
       "mainClass": "ASUserDelails",
