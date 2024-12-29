@@ -1,3 +1,34 @@
+/*
+ * Scenario 1: Payment Processing System
+You are developing a payment processing system to handle various payment methods.
+
+Abstract Class:
+
+Create an abstract class Payment with the following:
+Fields:
+double amount
+String transactionID
+Constructor to initialize the fields.
+Abstract method processPayment().
+Concrete method displayDetails() to print the transaction ID and amount.
+Subclasses:
+
+Create the following subclasses:
+CreditCardPayment:
+Additional field: String cardNumber.
+Override processPayment() to print "Processing credit card payment for amount: $[amount].".
+PaypalPayment:
+Additional field: String paypalID.
+Override processPayment() to print "Processing PayPal payment for amount: $[amount]."
+Main Class:
+
+Create instances of both CreditCardPayment and PaypalPayment.
+Call processPayment() and displayDetails() for each object.
+
+
+ */
+
+
 abstract class Payment {
     double amount;
     String transactionID;
@@ -24,7 +55,7 @@ class CreditCardPayment extends Payment {
     }
 
     public void processPayment() {
-        System.out.println("Processing credit card payment for amount: $[amount]");
+        System.out.println("Processing credit card payment for amount: " + amount);
     }
 }
 
@@ -37,20 +68,19 @@ class PaypalPayment extends Payment {
     }
 
     public void processPayment() {
-        System.out.println("Processing PayPal payment for amount: $[amount]");
+        System.out.println("Processing PayPal payment for amount: " + amount);
     }
 }
 
 public class ASPayment {
     public static void main(String[] args) {
-        
-        CreditCardPayment c = new CreditCardPayment(20000,"101","9111");
+
+        CreditCardPayment c = new CreditCardPayment(20000, "101", "9111");
         c.processPayment();
         c.displayDetails();
 
-        PaypalPayment p = new PaypalPayment(90000    , "102","6260");
+        PaypalPayment p = new PaypalPayment(90000, "102", "6260");
         p.processPayment();
         p.displayDetails();
     }
 }
- 

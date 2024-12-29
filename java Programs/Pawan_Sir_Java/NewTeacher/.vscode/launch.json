@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ASLibraryItem",
+      "request": "launch",
+      "mainClass": "ASLibraryItem",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASCourse",
+      "request": "launch",
+      "mainClass": "ASCourse",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASVehicie",
+      "request": "launch",
+      "mainClass": "ASVehicie",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
       "name": "ASPayment",
       "request": "launch",
       "mainClass": "ASPayment",

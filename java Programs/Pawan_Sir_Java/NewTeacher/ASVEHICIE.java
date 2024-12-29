@@ -27,7 +27,7 @@ class Bike extends Vehicle {
     }
 }
 
-public class ASVEHICIE {
+public class ASVehicie {
     public static void main(String[] args) {
         Vehicle v = new Vehicle();
         v.speed();
