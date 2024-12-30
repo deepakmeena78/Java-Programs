@@ -59,18 +59,64 @@ abstract class GameCharacter {
 }
 
 class Warrior extends GameCharacter {
-    public void attack() {
+    int strength;
 
+    public Warrior(int strength) {
+        this.strength = strength;
+    }
+
+    public void attack() {
+        System.out.println("Attack: Powerful sword slash for " + strength * 3 + " damage!");
     }
 
     public void defend() {
-
+        System.out.println("Defend: Raises shield, defence boosted by " + strength);
     }
 }
 
 class Wizard extends GameCharacter {
+    int power;
+
+    public Wizard(int power) {
+        this.power = power;
+    }
+
+    public void attack() {
+        System.out.println("Attack: Casts spell, deals " + power * 2 + " magical damage!");
+    }
+
+    public void defend() {
+        System.out.println("Defend: Creates magical barrier, defence boosted by " + power);
+    }
 }
 
 public class ASGameCharacter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        boolean flag = true;
+        while (flag) {
+            System.out.println("Enter Warrior Actions : ");
+            int n = sc.nextInt();
+
+            if (n == 1 || n == 2) {
+
+                System.out.println("Enter Helth : ");
+                int num = sc.nextInt();
+
+                flag = false;
+                if (n == 1) {
+                    Warrior w = new Warrior(num);
+                    w.attack();
+                    w.defend();
+                } else if (n == 2) {
+                    Wizard z = new Wizard(num);
+                    z.attack();
+                    z.defend();
+                }
+            } else {
+                System.out.println("Enter Please Valid Number :  1/2");
+            }
+        }
+    }
 }

@@ -16,14 +16,9 @@ class GeometricSeries extends Series {
     }
 
     public void nextTerm() {
-        if (resource >= 1 || resource <= 10 && growth >= 1 || growth <= 10 && planets >= 1 || planets <= 10) {
-            int temp = resource * growth;
-            int temp2 = growth * temp;
-            int temp3 = resource * temp2;
-
-            System.out.println(resource + " : " + temp + " : " + temp2 + " : " + temp3);
-        } else {
-            System.out.println("Invalid number of planets! Please enter a value between 1 and 8.");
+        for (int i = 1; i <= planets; i++) {
+            System.out.print(this.resource + " : ");
+            this.resource = growth * resource;
         }
     }
 }

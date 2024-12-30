@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Douts",
+      "request": "launch",
+      "mainClass": "Douts",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "Rexr",
+      "request": "launch",
+      "mainClass": "Rexr",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASGameCharacter",
+      "request": "launch",
+      "mainClass": "ASGameCharacter",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
       "name": "ASLibraryItem",
       "request": "launch",
       "mainClass": "ASLibraryItem",
