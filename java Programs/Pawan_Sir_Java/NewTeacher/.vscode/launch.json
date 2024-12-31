@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AScar",
+      "request": "launch",
+      "mainClass": "AScar",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASmatrix",
+      "request": "launch",
+      "mainClass": "ASmatrix",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "Doubt2",
+      "request": "launch",
+      "mainClass": "Doubt2",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
       "name": "Douts",
       "request": "launch",
       "mainClass": "Douts",

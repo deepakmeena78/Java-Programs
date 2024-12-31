@@ -53,10 +53,33 @@ public class ASmatrix {
             int num = sc.nextInt();
             int arr[][] = new int[num][num];
             int arr2[][] = new int[num][num];
-            if (1 <= num && num <= 5) {
-                System.out.println("Enter Element : ");
+            int arr3[][] = new int[num][num];
 
+            if (1 <= num && num <= 5) {
                 flag = false;
+                System.out.println("Enter Element : ");
+                for (int i = 0; i < num; i++) {
+                    for (int j = 0; j < num; j++) {
+                        arr[i][j] = sc.nextInt();
+                    }
+                }
+                for (int i = 0; i < num; i++) {
+                    for (int j = 0; j < num; j++) {
+                        arr2[i][j] = sc.nextInt();
+                    }
+                }
+
+                for (int i = 0; i < num; i++) {
+                    for (int j = 0; j < num; j++) {
+                        arr3[i][j] = arr[i][j] + arr2[i][j];
+                    }
+                }
+                for (int i = 0; i < arr3.length; i++) {
+                    for (int j = 0; j < num; j++) {
+                        System.out.print(arr3[i][j] + " ");
+                    }
+                    System.out.println();
+                }
             } else {
                 System.out.println("Enter Valid Number : 1 To 5");
             }

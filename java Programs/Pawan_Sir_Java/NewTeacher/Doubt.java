@@ -4,7 +4,7 @@ interface I1 {
     }
 }
 
-public class Douts {
+public class Doubt {
     public static void main(String[] args) {
         I1.m1();
     }
