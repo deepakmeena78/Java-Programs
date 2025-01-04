@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AS_First_UpperCase",
+      "request": "launch",
+      "mainClass": "AS_First_UpperCase",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "AS_VowelUpperCase",
+      "request": "launch",
+      "mainClass": "AS_VowelUpperCase",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "AS_countConsonants",
+      "request": "launch",
+      "mainClass": "AS_countConsonants",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "AS_VenueDetails",
+      "request": "launch",
+      "mainClass": "AS_VenueDetails",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "AS_ValidPassword",
+      "request": "launch",
+      "mainClass": "AS_ValidPassword",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "AS_CharacterFrequency",
+      "request": "launch",
+      "mainClass": "AS_CharacterFrequency",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
+      "name": "ASPaymentGateway",
+      "request": "launch",
+      "mainClass": "ASPaymentGateway",
+      "projectName": "NewTeacher_b26338ea"
+    },
+    {
+      "type": "java",
       "name": "AScar",
       "request": "launch",
       "mainClass": "AScar",
