@@ -10,14 +10,16 @@ public class AS_First_UpperCase {
         String s = sc.nextLine().toLowerCase();
         String update = "";
 
-        for (int i = 1; i < s.length(); i++) {
-            char ch = s.charAt(i - 1);
-            char ch3 = s.charAt(i);
-            if (ch == ' ' || i == 1) {
+        for (int i = 0; i < s.length() - 1; i++) {
+            char ch = s.charAt(i);
+            char ch3 = s.charAt(i + 1);
+            if (ch == ' ') {
                 int a = ch3;
                 a = a - 32;
                 char ch2 = (char) a;
                 update = update + ch2;
+            } else {
+                update = update + ch3;
             }
         }
         System.out.println(update);
