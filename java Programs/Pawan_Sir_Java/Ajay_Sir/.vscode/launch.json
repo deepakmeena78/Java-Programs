@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "HashCode",
+      "request": "launch",
+      "mainClass": "HashCode",
+      "projectName": "Ajay_Sir_5756d266"
+    },
+    {
+      "type": "java",
+      "name": "EquelesMethos",
+      "request": "launch",
+      "mainClass": "EquelesMethos",
+      "projectName": "Ajay_Sir_5756d266"
+    },
+    {
+      "type": "java",
+      "name": "ToStringMethod",
+      "request": "launch",
+      "mainClass": "ToStringMethod",
+      "projectName": "Ajay_Sir_5756d266"
+    },
+    {
+      "type": "java",
       "name": "AS_First_UpperCase",
       "request": "launch",
       "mainClass": "AS_First_UpperCase",
