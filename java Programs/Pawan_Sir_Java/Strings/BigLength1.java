@@ -25,7 +25,6 @@ public class BigLength1 {
                 char temp = s.charAt(n);
                 n++;
                 start = i + 1;
-                //System.out.println(temp);
                 System.out.print(count+" ");
             }
         }

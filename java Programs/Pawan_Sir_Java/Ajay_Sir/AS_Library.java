@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 interface LibraryOperations {
     void issueBook();
-
     void returnBook();
 }
 

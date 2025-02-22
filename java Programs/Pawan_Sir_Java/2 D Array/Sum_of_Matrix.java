@@ -1,44 +1,40 @@
-import java.util.Scanner;
+export const getUserWithCompletedTasks = (req, res) => {
+    const id = req.params.id;
 
-public class Sum_of_Matrix {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Number of Rows: ");
-        int num1 = sc.nextInt();
-
-        System.out.print("Enter Number of Columns: ");
-        int num2 = sc.nextInt();
-
-        int arr[][] = new int[num1][num2];
-        int arr1[][] = new int[num1][num2];
-        int ans[][] = new int[num1][num2];
-
-        System.out.println("Enter Element of First Matrix");
-        for (int i = 0; i < num1; i++) {
-            for (int j = 0; j < num2; j++) {
-                System.out.println("Enter value of row " + (i + 1) + " and Column " + (j + 1));
-                arr[i][j] = sc.nextInt();
-            }
+    pool.getConnection((err, con) => {
+        if (err) {
+            return res.status(500).json({ error: "Database connection failed" });
         }
-        System.out.println("Enter Element of Second Matrix");
-        for (int i = 0; i < num1; i++) {
-            for (int j = 0; j < num2; j++) {
-                System.out.println("Enter value of row " + (i + 1) + " and Column " + (j + 1));
-                arr1[i][j] = sc.nextInt();
+
+        // Single optimized query using JOIN
+        let sql = `
+            SELECT u.*, t.* 
+            FROM user u 
+            LEFT JOIN task_user t ON u.id = t.id 
+            WHERE u.id = 1 AND t.status = 'complete'
+        `;
+
+        con.query(sql, [id], (err, result) => {
+            con.release();
+            if (err) {
+                return res.status(500).json({ error: "Query failed" });
             }
-        }
-        for (int i = 0; i < num1; i++) {
-            for (int j = 0; j < num2; j++) {
-                ans[i][j] = arr[i][j] * arr1[i][j];
-            }
-        }
-        System.out.println("Sum of Two MAtrix");
-        for (int i = 0; i < num1; i++) {
-            for (int j = 0; j < num2; j++) {
-                System.out.print(ans[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
+
+            // Extracting user and tasks separately
+            let user = result.length > 0 ? {
+                id: result[0].id,
+                name: result[0].name,
+                email: result[0].email
+            } : null;
+
+            let tasks = result.map(row => ({
+                task_id: row.task_id,
+                title: row.title,
+                status: row.status
+            })).filter(task => task.task_id); // Remove null tasks
+
+            // Sending data to EJS
+            res.render("UserProfile.ejs", { user, tasks });
+        });
+    });
+};
