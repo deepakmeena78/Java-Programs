@@ -19,7 +19,7 @@ public class Patterns65 {
                 if (j >= num + 1 - i) {
                     System.out.print("*");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("1");
                 }
             }
             System.out.println();
