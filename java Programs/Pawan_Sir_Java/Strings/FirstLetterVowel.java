@@ -13,7 +13,7 @@ public class FirstLetterVowel {
             char ch = s.charAt(i);
             if (i == 0 || ch == ' ') {
                 char ch2 = s.charAt(i + 1);
-                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch2 == 'a' || ch2 == 'e'
+                if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch2 == 'a' || ch2 == 'e'
                         || ch2 == 'i' || ch2 == 'o' || ch2 == 'u') {
                     count++;
                 }

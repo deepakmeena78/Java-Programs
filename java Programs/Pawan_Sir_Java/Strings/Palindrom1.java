@@ -17,6 +17,7 @@ public class Palindrom1 {
                 count++;
             }
         }
+        
         if (count == arr.length / 2) {
             System.out.println("Palindrom");
         } else {
