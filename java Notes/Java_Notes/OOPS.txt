@@ -6,7 +6,7 @@ Ans. -> its is technique;
 2. Why OOP concepts?
 Ans. -> OOPs stands for Object-Oriented Programming System. It's a programming paradigm that use to giving style of programing
 
-3. What is the meaning of representing an object?
+3. What is the meaning of representing an object? 
 Ans. -> 
 
 4. What are the problems with structure programming language?
